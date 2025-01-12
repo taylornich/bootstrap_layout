@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Grid Container</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+
+    <style>
+        /*Question 2 Task 1*/
+        header {
+            background-image: url('https://th.bing.com/th/id/OIP.qYEC7KeQLQ-i5FCNbWpV7AHaDt?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .intro {
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .intro p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /*Question 2 Task 2*/
+        .featurette {
+            padding: 60px 0;
+        }
+
+        .featurette h3 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .featurette p {
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .featurette-icon img {
+            margin-bottom: 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        .featurette-item {
+            text-align: center;
+            padding: 20px;
+        }
+        /*Question 2 task 3*/
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .about-content {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .about-sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .about-sidebar h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .about-sidebar p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        /*Question 2 task 4*/
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        footer h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .col {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            footer .col {
+                text-align: center;
+            }
+        }
+    </style>
+    <!--Question 2 Task 1-->
+    <header>
+        <div class="intro">
+            <h1>Website Welcome Text</h1>
+            <p>Introductory Message</p>
+        </div>
+    </header>
+    <body>
+        <!--Question 2 Task 2-->
+        <section class="container featurette">
+            <div class="row text-center">
+                <div class="col-lg-4 featurette-item">
+                    <div class="featurette-icon">
+                        <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Placeholder Image 1">
+                    </div>
+                    <h3>Feature 1 Title</h3>
+                    <p>Feature 1 description</p>
+                </div>
+                <div class="col-lg-4 featurette-item">
+                    <div class="featurette-icon">
+                        <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Placeholder Image 1">
+                    </div>
+                    <h3>Feature 2 Title</h3>
+                    <p>Feature 2 description</p>
+                </div>
+                <div class="col-lg-4 featurette-item">
+                    <div class="featurette-icon">
+                        <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Placeholder Image 1">
+                    </div>
+                    <h3>Feature 3 Title</h3>
+                    <p>Feature 3 description</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Question 2 task 3-->
+        <section class="container about-section">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="about-content">
+                        <h2>About Us</h2>
+                        <p>About us Paragraph Information</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="about-sidebar">
+                        <h4>About Us Sidebar</h4>
+                        <p>About US Sidebar Point 1 description</p>
+                        <h4>About Us Sidebar Point 2</h4>
+                        <p>About US Sidebar Point 2 description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Question 2 Task 4-->
+        <footer>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Information</h5>
+                    <p>Email: youremail@blank.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: Fill in Address here</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Social Media Links</h5>
+                    <p>
+                        <a href="#">Facebook</a><br>
+                        <a href="#">Twitter</a><br>
+                        <a href="#">LinkedIn</a><br>
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter Signup</h5>
+                    <form action="#" method="POST">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary mt-2">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
